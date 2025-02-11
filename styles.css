@@ -1,3 +1,4 @@
+/* Estilos Generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,17 @@ body {
     color: #333;
 }
 
+.g {
+    width: 100vw;
+    height: 100vh; 
+    background: 
+        linear-gradient(to right, white 10%, rgba(255, 0, 0, 0.4) 30%, transparent 50%, rgba(0, 0, 255, 0.4) 70%, white 90%), 
+        radial-gradient(circle at center, purple 20%, rgb(73, 0, 73) 35%, purple 50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Encabezado */
 header {
     background-color: #000;
     color: #fff;
@@ -24,7 +36,10 @@ nav ul {
 
 nav ul li {
     display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+
 
 .menu-button {
     display: inline-block;
@@ -44,18 +59,49 @@ nav ul li {
     box-shadow: 0 0 15px rgba(57, 43, 255, 0.7);
 }
 
+/* Contenedor de la Galería */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     padding: 20px;
     justify-content: center;
     align-items: center;
 }
 
+.g2 {
+    width: 300px;
+    height: 500px;
+    margin: 50px;
+    padding:2px 2px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    font-size: 20px;
+}
+
+.g2 img
+{
+    width: 300px;
+    height: 500px;
+}
+
+.g3 {
+    background: linear-gradient(45deg, #4741ff, #2b2bff);
+}
+.g4 {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+.g4:hover{
+    box-shadow: 0 0 15px rgba(255, 75, 43, 0.7)
+}
+
+/* Imágenes dentro de la Galería */
 .grid-item {
-    width: 100%;
     max-width: 400px;
+    width: 100%; 
     height: auto;
     border-radius: 12px;
     cursor: pointer;
@@ -68,6 +114,7 @@ nav ul li {
     filter: brightness(0.9);
 }
 
+/* Modal para abrir imágenes en grande */
 .modal {
     display: none;
     position: fixed;
