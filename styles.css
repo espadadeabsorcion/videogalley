@@ -45,12 +45,10 @@ nav ul li {
     display: inline-block;
     padding: 12px 24px;
     color: #fff;
-    background: linear-gradient(45deg, #4741ff, #2b2bff);
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
     text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
-    border: none;
-    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
