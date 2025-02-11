@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destacados - Galería Estética</title>
+    <link rel="stylesheet" href="destacados.css">
+    <script defer src="destacados.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Destacados</h1>
+        <nav>
+            <ul>
+                <li><button onclick="abrir('geleria.html')" class="menu-button">Inicio</button></li>
+                <li><button onclick="abrir('seccionesv.html')" class="menu-button">Secciones</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor de Destacados -->
+    <section class="destacados-container">
+        <div class="destacado-card" data-seccion="animacion corto" data-url="https://www.youtube.com/watch?v=q2oGa3AMT_U" >
+            <img src="https://img.youtube.com/vi/q2oGa3AMT_U/hqdefault.jpg" alt="Animación">
+            <div class="overlay">
+                <h3>Corto animado de nombre 'Mi madre'. ¿Podras comprenderlo?</h3>
+                <h2>Animación</h2>
+            </div>
+        </div>
+    
+        <div class="destacado-card grande" data-seccion="cortos" data-url="https://www.youtube.com/watch?v=m6jfZa00vkY">
+            <img src="https://img.youtube.com/vi/m6jfZa00vkY/hqdefault.jpg" alt="Cortos">
+            <div class="overlay">
+                <h3>Corto ganador 1er premio concurso "Hacé cine" ECU</h3>
+                <h2>Cortos</h2>
+            </div>
+        </div>
+    
+        <div class="destacado-card" data-seccion="entornos" data-url="https://www.youtube.com/watch?v=zSiLc_AAClQ">
+            <img src="https://img.youtube.com/vi/zSiLc_AAClQ/hqdefault.jpg" alt="Entornos">
+            <div class="overlay">
+                <h3>Espacios Protegidos Españoles</h3>
+                <h2>Entornos</h2>
+            </div>
+        </div>
+    
+        <div class="destacado-card grande" data-seccion="timelapses" data-url="https://www.youtube.com/watch?v=NtsJ5m6C7dU">
+            <img src="https://img.youtube.com/vi/NtsJ5m6C7dU/hqdefault.jpg" alt="Timelapses">
+            <div class="overlay">
+                <h3>15 años de cultivar</h3>
+                <h2>Timelapses</h2>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

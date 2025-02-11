@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones - Galería Estética</title>
+    <link rel="stylesheet" href="seccionesv.css">
+    <script defer src="seccionesv.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Secciones</h1>
+        <nav>
+            <ul>
+                <li><button onclick="abrir('geleria.html')" class="menu-button">Inicio</button></li>
+                <li><button onclick="abrir('destacadosv.html')" class="menu-button">Destacados</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Secciones -->
+    <section class="secciones-container">
+        <div class="seccion-card" data-seccion="parodia" data-url="https://www.youtube.com/watch?v=RAT2Tzv_KXc">
+            <img src="https://img.youtube.com/vi/RAT2Tzv_KXc/hqdefault.jpg" alt="Parodia">
+            <div class="overlay">
+                <h2>Parodia</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card grande" data-seccion="musica" data-url="https://www.youtube.com/watch?v=cH_yrEmJabE">
+            <img src="https://img.youtube.com/vi/cH_yrEmJabE/hqdefault.jpg" alt="Musica">
+            <div class="overlay">
+                <h2>Musica</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card" data-seccion="animacion" data-url="https://www.youtube.com/watch?v=B1J6Ou4q8vE">
+            <img src="https://img.youtube.com/vi/B1J6Ou4q8vE/hqdefault.jpg" alt="Animación">
+            <div class="overlay">
+                <h2>Animación</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card grande" data-seccion="timelapses" data-url="https://www.youtube.com/watch?v=BqQn-cnFTFQ">
+            <img src="https://img.youtube.com/vi/BqQn-cnFTFQ/hqdefault.jpg" alt="Timelapses">
+            <div class="overlay">
+                <h2>Timelapses</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-card" data-seccion="tecnologia" data-url="https://www.youtube.com/watch?v=-pD42v14ZW4">
+            <img src="https://img.youtube.com/vi/-pD42v14ZW4/hqdefault.jpg" alt="Entornos">
+            <div class="overlay">
+                <h2>Entornos</h2>
+                <div class="icons">
+                    <span class="icon-heart">&#10084;</span>
+                    <span class="icon-comment">&#128172;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="comment-box" class="comment-box" >
+        <textarea id="textarea" placeholder="Escribe tu comentario aquí..."></textarea>
+        <button onclick="submitComment()">Enviar</button>
+        <span class="close" onclick="closeCommentBox()">X</span>
+    </div>
+
+    <!-- Corazon -->
+    <div id="hearts-container" class="hearts-container"></div>
+
+</body>
+</html>
